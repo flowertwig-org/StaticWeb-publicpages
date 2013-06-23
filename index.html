@@ -15,8 +15,6 @@
         document.getElementsByTagName('html')[0].className = 'js';
     </script>
     <link href="/css/sw.css" rel="stylesheet" />
-    <script src="/js/vendor/jquery-1.10.1.min.js"></script>
-    <script src="/js/sw.js"></script>
 </head>
 <body>
     <div class="header">
@@ -73,7 +71,9 @@
         </div>
     </div>
     <!-- /container -->
-    <!--<script src="/js/vendor/jquery-1.10.1.min.js"></script>-->
+    <script src="/js/vendor/modernizr-2.6.2-touch.min.js"></script>
+    <script src="/js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="/js/sw.js"></script>
     <script>
         // TODO: add a sw control for this 
         var _gaq = [['_setAccount', 'UA-84758-9'], ['_trackPageview']];

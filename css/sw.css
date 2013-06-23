@@ -183,6 +183,12 @@ body {
 
     .nav .site-menu li a {
         float: none;
+        display: block;
+        padding: 0;
+        padding-left: 14px;
+    }
+    .touch .nav .site-menu li a {
+        padding: 5px 0 5px 14px;
     }
 
     .js .only-mobile {
