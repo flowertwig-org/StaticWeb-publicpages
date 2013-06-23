@@ -14,180 +14,14 @@
     <script>
         document.getElementsByTagName('html')[0].className = 'js';
     </script>
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        }
-
-        .js .js-hide {
-            display: none;
-        }
-
-        .sign-in {
-            float: right;
-        }
-
-        .header {
-            color: gray;
-            background-color: #000;
-            margin-bottom: 15px;
-        }
-
-        .nav {
-            width: 100%;
-        }
-
-            .nav ul {
-                list-style-type: none;
-                padding: 0;
-                position: relative;
-                margin: 0;
-                list-style-image: none;
-            }
-
-            .nav li a {
-                font-size: 14px;
-                line-height: 24px;
-                float: left;
-                position: relative;
-                padding: 10px;
-            }
-
-            .nav a {
-                color: gray;
-                text-decoration: none;
-            }
-
-                .nav a:hover {
-                    color: #fff;
-                    text-decoration: underline;
-                }
-
-        .nav .page-title {
-            font-size: 24px;
-        }
-
-        .content {
-            padding-left: 10px;
-            width: 90%;
-            margin: 0 auto;
-        }
-
-            .content p,
-            .content h1 {
-padding: 15px;
-            }
-
-            .content h2 {
-padding: 15px;
-padding-bottom: 0;
-
-            }
-
-        .span12 {
-            width: 66%;
-            float: left;
-            height: 386px;
-            margin-left: 0;
-            margin-bottom: 15px;
-        }
-
-        .span6 {
-            width: 30%;
-            float: left;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
-        .only-mobile {
-            display: none;
-        }
-        @media only screen and (max-width: 990px) {
-            .content {
-                width: 100%;
-                padding: 0;
-            }
-            .span12 {
-                margin-left: 1%;
-            }
-        }
-
-        @media only screen and (max-width: 810px) {
-            .content {
-                width: 100%;
-            }
-
-            .span12 {
-                width: 97%;
-                margin-bottom: 1%;
-            }
-
-            .span6 {
-                width: 48%;
-                margin: 1%;
-                margin-right: 0;
-                margin-top: 0;
-            }
-            .content p {
-                padding-top: 5px;
-            }
-            .content h1 {
-                padding-bottom: 0;
-            }
-        }
-
-        @media only screen and (max-width: 590px) {
-            .nav .first-normal-menu-item {
-                clear: left;
-            }
-        }
-
-        @media only screen and (max-width: 598px) {
-            .nav .first-normal-menu-item {
-                clear: left;
-            }
-            .content .span12 {
-                height: auto;
-            }
-        }
-
-        @media only screen and (max-width: 526px) {
-            .span6 {
-                width: 97%;
-            }
-
-                .content .span6 p {
-                    display: none;
-                }
-        }
-        @media only screen and (max-width: 410px) {
-            .content .span12 p {
-                display: none;
-            }
-            .content h1,
-            .content h2 {
-                padding: 0;
-            }
-            .js .site-menu {
-                display: none;
-            }
-            .js .only-mobile {
-                float: right;
-                display: block;
-            }
-
-            .header {
-                margin-bottom: 5px;
-            }
-        }
-
-    </style>
+    <link href="/css/sw.css" rel="stylesheet" />
+    <script src="/js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="/js/sw.js"></script>
 </head>
 <body>
     <div class="header">
         <div class="nav">
-            <ul>
+            <ul class="top-nav">
                 <li><a class="page-title" href="/">StaticWeb</a></li>
                 <li class="sign-in"><a href="//stest.cms.staticweb.se">Sign in</a></li>
                 <li>
@@ -209,24 +43,26 @@ padding-bottom: 0;
         <div class="sw-page" data-sw-page-id="/">
             <div class="container content">
                 <div class="js-hide alert alert-error">
-                    You are only viewing a part of this website due to that javascript is disable or not supported.<br />
-                    To get full functionality from this website you need to enable javascript or visit this website with a browser supporting javascript.
+                    <p>
+                        You are only viewing a part of this website due to that javascript is disable or not supported.<br />
+                        To get full functionality from this website you need to enable javascript or visit this website with a browser supporting javascript.
+                    </p>
                 </div>
-                <div class="span12" style="border-radius: 3px; background-color: lightgray;">
+                <div class="span12" style="border-radius: 3px; background-color: #eee;">
                     <h1 style="text-align: center">Getting started with StaticWeb!</h1>
                     <p>
                         This service is currently under development.
                         Please comeback soon to try it out.
                     </p>
                 </div>
-                <div class="span6" style="border-radius: 3px; background-color: lightgray;">
+                <div class="span6" style="border-radius: 3px; background-color: #eee;">
                     <h2 style="text-align: center">Why use StaticWeb?</h2>
                     <p>
                         This service is currently under development.
                         Please comeback soon to try it out.
                     </p>
                 </div>
-                <div class="span6" style="border-radius: 3px; background-color: lightgray">
+                <div class="span6" style="border-radius: 3px; background-color: #eee">
                     <h2 style="text-align: center">Do you need help?</h2>
                     <p>
                         This service is currently under development.
