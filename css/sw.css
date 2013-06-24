@@ -8,6 +8,10 @@ body {
     display: none;
 }
 
+.no-js .js-require {
+    display: none;
+}
+
 .sign-in {
     float: right;
 }
@@ -66,17 +70,20 @@ body {
     .content p,
     .content h1 {
         padding: 15px;
+        margin: 0;
     }
 
-    .content h2 {
+    .content h2,
+    .content h3 {
         padding: 15px;
         padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 .span12 {
     width: 66%;
     float: left;
-    height: 386px;
     margin-left: 0;
     margin-bottom: 15px;
 }
@@ -92,9 +99,19 @@ body {
     display: none;
 }
 
+.in-page-read-more {
+    display: none;
+}
+
 .visible,
-.js .site-menu.visible {
+.js .site-menu.visible,
+.js .content .in-page-more-text.visible {
     display: block;
+}
+
+.hidden,
+.js .in-page-read-more.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 990px) {
@@ -144,10 +161,6 @@ body {
     .nav .first-normal-menu-item {
         clear: left;
     }
-
-    .content .span12 {
-        height: auto;
-    }
 }
 
 @media only screen and (max-width: 526px) {
@@ -155,19 +168,21 @@ body {
         width: 97%;
     }
 
-    .js .content .span6 p {
-        display: none;  /* make sure we are only hiding this IF browser has javascript */
+    .js .content .span6 p.text {
+        display: none; /* make sure we are only hiding this IF browser has javascript */
     }
 }
 
 @media only screen and (max-width: 410px) {
-    .js .content .span12 p {
-        display: none;  /* make sure we are only hiding this IF browser has javascript */
+    .js .content .in-page-more-text {
+        display: none;
     }
 
-    .content h1,
-    .content h2 {
-        padding: 0;
+    .js .in-page-read-more {
+        display: block;
+        float: right;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .site-menu {
@@ -178,7 +193,7 @@ body {
     }
 
     .js .site-menu {
-        display: none;  /* make sure we are only hiding this IF browser has javascript */
+        display: none; /* make sure we are only hiding this IF browser has javascript */
     }
 
     .nav .site-menu li a {
@@ -187,6 +202,7 @@ body {
         padding: 0;
         padding-left: 14px;
     }
+
     .touch .nav .site-menu li a {
         padding: 5px 0 5px 14px;
     }
