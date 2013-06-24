@@ -103,6 +103,12 @@ body {
     display: none;
 }
 
+.read-more {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .visible,
 .js .site-menu.visible,
 .js .content .in-page-more-text.visible {
@@ -180,9 +186,6 @@ body {
 
     .js .in-page-read-more {
         display: block;
-        float: right;
-        margin-bottom: 10px;
-        margin-top: 10px;
     }
 
     .site-menu {
