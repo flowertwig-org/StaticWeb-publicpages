@@ -74,7 +74,8 @@ body {
     }
 
     .content h2,
-    .content h3 {
+    .content h3,
+    .content h4 {
         padding: 15px;
         padding-bottom: 0;
         margin-top: 0;
